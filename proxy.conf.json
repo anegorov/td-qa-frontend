@@ -1,0 +1,6 @@
+{
+    "*": {
+      "target": "https://PITC-Zscaler-EMEA-London3PR.proxy.corporate.ge.com:80",
+      "secure": true
+    }
+  }

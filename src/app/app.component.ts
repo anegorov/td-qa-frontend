@@ -6,20 +6,21 @@ import {HttpService} from "./http.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'td-qa-fromt';
-  // products: any[];
+  testResults: any[];
 
-  products = [
-    {name:'test1'},
-    {name:'test2'},
-    {name:'test3'},
-    {name:'test4'}
-  ];
+  // products = [
+  //   {name:'test1'},
+  //   {name:'test2'},
+  //   {name:'test3'},
+  //   {name:'test4'}
+  // ];
 
   constructor(private HttpService: HttpService) { }
 
   ngOnInit() {
-    // this.HttpService.getProducts().subscribe(product => {this.products = product});
+     this.HttpService.getTestResults().subscribe(test => {this.testResults = test});
   }
 }

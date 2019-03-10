@@ -11,7 +11,7 @@ export class HttpService {
 
   getTestResults(): Observable<any>{
   
-    const url = `https://guidein.herokuapp.com/api/render/products`;
+    const url = `https://td-jv-qa-backend.run.aws-usw02-pr.ice.predix.io/api/qa?pageSize=10`;
 
     const httpOptions = {
           headers: new HttpHeaders({
