@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="ui-g-12 ui-md-6 ui-lg-4" *ngFor="let product of products" routerLink="/{{product._id}}">
+  <p-card header="{{product.name}}" [style]="{width: '360px'}">
+    <div>
+    </div>
+  </p-card>
+  </div>
+
+<router-outlet></router-outlet>
