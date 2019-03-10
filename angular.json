@@ -64,8 +64,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "td-qa-fromt:build",
-            "proxyConfig": "proxy.conf.json"
+            "browserTarget": "td-qa-fromt:build"
           },
           "configurations": {
             "production": {
